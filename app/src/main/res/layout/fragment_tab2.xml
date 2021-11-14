@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
     tools:context=".Tab2Fragment">
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/font_large"
+        android:textAlignment="center"
         android:text="@string/tab3_fragment_text" />
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/font_medium"
+        android:paddingTop="@dimen/margin_medium"
+        android:text="hello world" />
+
+</LinearLayout>
