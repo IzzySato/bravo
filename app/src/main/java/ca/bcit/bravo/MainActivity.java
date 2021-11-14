@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
@@ -25,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
         // Attach the ViewPager to the TabLayout
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(pager);
+
+        // Styling the toolbar (tabs)
+
+
 
         // Setting icons as tab layout buttons
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_fire);
