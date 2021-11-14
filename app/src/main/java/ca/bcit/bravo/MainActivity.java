@@ -26,6 +26,13 @@ public class MainActivity extends AppCompatActivity {
         TabLayout tabLayout = findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(pager);
 
+        // Setting icons as tab layout buttons
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_fire);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_fire);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_fire);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_fire);
+
+
 
     }
 
@@ -49,6 +56,8 @@ public class MainActivity extends AppCompatActivity {
             }
             return null;
         }
+
+
 
 
         @Override
