@@ -1,26 +1,7 @@
 <resources>
     <string name="app_name">Bravo</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string-array name="bakery_items">
-        <item>Croissant</item>
-        <item>Muffin</item>
-        <item>Cookie</item>
-    </string-array>
-
-    <string-array name="produce_items">
-        <item>Carrot</item>
-        <item>Cucumber</item>
-        <item>Cabbage</item>
-    </string-array>
-
-    <string-array name="seafood_items">
-        <item>Crab</item>
-        <item>Shrimp</item>
-        <item>Salmon</item>
-    </string-array>
-
+<!--    Tabs   -->
     <string name="tab1_text">Tab 1</string>
     <string name="tab2_text">Tab 2</string>
     <string name="tab3_text">Tab 3</string>
