@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_medium"
+    tools:context=".InfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_large"
+                android:textAlignment="center"
+                android:text="@string/tab4_info_title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:autoLink="all"
+                android:layout_marginBottom="20dp"
+                android:text="@string/tab4_info_text1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_info_text2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_1_eg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_2_eg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_3_eg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_4_eg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_5" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_5_eg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_6" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_6_eg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_7" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_7_eg" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_medium"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_8" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginBottom="20dp"
+                android:paddingTop="@dimen/margin_medium"
+                android:text="@string/tab4_list_8_eg" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
