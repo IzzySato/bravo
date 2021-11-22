@@ -32,10 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Setting icons as tab layout buttons
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_fire);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_fire);
-        tabLayout.getTabAt(2).setIcon(R.drawable.ic_fire);
-        tabLayout.getTabAt(3).setIcon(R.drawable.ic_fire);
+        tabLayout.getTabAt(0).setIcon(R.drawable.ic_action_home);
+        tabLayout.getTabAt(1).setIcon(R.drawable.ic_action_fire);
+        tabLayout.getTabAt(2).setIcon(R.drawable.ic_action_air);
+        tabLayout.getTabAt(3).setIcon(R.drawable.ic_action_info);
 
 
 
@@ -69,13 +69,13 @@ public class MainActivity extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return getResources().getText(R.string.tab1_text);
+                    return getResources().getText(R.string.tab_home);
                 case 1:
                     return getResources().getText(R.string.tab_map);
                 case 2:
-                    return getResources().getText(R.string.tab3_text);
+                    return getResources().getText(R.string.tab_air);
                 case 3:
-                    return getResources().getText(R.string.tab4_text);
+                    return getResources().getText(R.string.tab_info);
             }
             return null;
         }

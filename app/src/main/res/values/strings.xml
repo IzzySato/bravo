@@ -2,17 +2,16 @@
     <string name="app_name">FiredApp</string>
 
 <!--    Tabs   -->
-    <string name="tab1_text">Tab 1</string>
-    <string name="tab2_text">Tab 2</string>
-    <string name="tab3_text">Tab 3</string>
-    <string name="tab4_text">Tab 4</string>
+    <string name="tab_home">home</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_air">air</string>
+    <string name="tab_info">info</string>
     <string name="tab2_fragment_text">TAB 2 FRAGMENT</string>
     <string name="tab3_fragment_text">TAB 3 FRAGMENT</string>
     <string name="tab4_fragment_text">TAB 4 FRAGMENT</string>
     <string name="tab1_fragment_text">TAB 1 FRAGMENT</string>
 
 <!--    Maps   -->
-    <string name="tab_map">Map</string>
     <string name="title">Wild Fires in Canada</string>
     <string name="search">Search</string>
     <string name="mapType">Toggle Type</string>
