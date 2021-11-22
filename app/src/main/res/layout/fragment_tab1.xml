@@ -10,8 +10,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/font_large"
+        android:textSize="@dimen/font_header"
         android:textAlignment="center"
+        android:fontFamily="@font/charbb_reg"
+        android:textColor="@color/red_200"
         android:text="@string/tab1_fragment_text" />
 
     <TextView
@@ -19,6 +21,7 @@
         android:layout_height="match_parent"
         android:textSize="@dimen/font_medium"
         android:paddingTop="@dimen/margin_medium"
-        android:text="hello world" />
+        android:textAlignment="center"
+        android:text="Welcome to FireApp. Use this app when you need to find out where there are fires! Created by Izzy Sato, Divanshu Sharma, Jason Rivera" />
 
 </LinearLayout>
