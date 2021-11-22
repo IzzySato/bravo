@@ -18,8 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            app:tabRippleColor="@color/red_500"
 
+            app:tabBackground="@drawable/tab_background"
+            app:tabSelectedTextColor="@color/white"
             />
 
 
