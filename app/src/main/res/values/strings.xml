@@ -8,8 +8,29 @@
     <string name="tab_info">info</string>
     <string name="tab2_fragment_text">TAB 2 FRAGMENT</string>
     <string name="tab3_fragment_text">TAB 3 FRAGMENT</string>
-    <string name="tab4_fragment_text">TAB 4 FRAGMENT</string>
-    <string name="tab1_fragment_text">FiredApp</string>
+    <string name="tab4_info_title">Report a Wildfire</string>
+    <string name="tab1_fragment_text">TAB 1 FRAGMENT</string>
+
+<!--    info  -->
+    <string name="tab4_info_text1">To report a wildfire or irresponsible behaviour that could start a wildfire in British Columbia, please call +18006635555 or (*5555 from a cell phone) as soon as possible. Information from the public is crucial to the effectiveness of our response. </string>
+    <string name="tab4_info_text2">All calls are answered by BC Wildfire Service staff at the Provincial Wildfire Reporting Centre. Any information you can provide is helpful, however you can expect the emergency call taker to ask for details about the fire, such as;</string>
+    <string name="tab4_list_1">&#8226; Location</string>
+    <string name="tab4_list_1_eg">i.e. Where is the fire? How far up the hillside? Closest intersection?</string>
+    <string name="tab4_list_2">&#8226; Size</string>
+    <string name="tab4_list_2_eg">e.g. Metres? Hectares? Size of a house? Size of a football field?</string>
+    <string name="tab4_list_3">&#8226; Rate of spread</string>
+    <string name="tab4_list_3_eg">i.e. How quickly is the fire spreading?</string>
+    <string name="tab4_list_4">&#8226; Fuel</string>
+    <string name="tab4_list_4_eg">i.e. What is burning? Grass, bushes, trees?</string>
+    <string name="tab4_list_5">&#8226; Smoke/flames</string>
+    <string name="tab4_list_5_eg">i.e. What colour is the smoke? Are flames visible?</string>
+    <string name="tab4_list_6">&#8226; Threat</string>
+    <string name="tab4_list_6_eg">i.e. Are there any people or buildings at risk?</string>
+    <string name="tab4_list_7">&#8226; Action</string>
+    <string name="tab4_list_7_eg">i.e. Is anyone fighting the fire?</string>
+    <string name="tab4_list_8">&#8226; Campfires</string>
+    <string name="tab4_list_8_eg">If reporting a campfire, can you tell if it is wood burning or is it a propane campfire?</string>
+
 
 <!--    Maps   -->
     <string name="title">Wild Fires in Canada</string>
