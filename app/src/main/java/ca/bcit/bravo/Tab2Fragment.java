@@ -53,8 +53,6 @@ public class Tab2Fragment extends Fragment {
                              Bundle savedInstanceState) {
         View RootView = inflater.inflate(R.layout.fragment_tab2, null, false);
         tableLayout = RootView.findViewById(R.id.mytable);
-        TextView textView = RootView.findViewById(R.id.testText);
-        textView.setText("HELLO WORLD");
         stuff = new ArrayList<>();
         context = getActivity();
         new doIT().execute();
