@@ -20,6 +20,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_large"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:text="@string/tab4_info_title" />
 
             <TextView
@@ -27,6 +28,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
                 android:paddingTop="@dimen/margin_medium"
+                android:textColor="@color/black"
                 android:autoLink="all"
                 android:layout_marginBottom="20dp"
                 android:text="@string/tab4_info_text1" />
@@ -35,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_info_text2" />
@@ -43,12 +46,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_1" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
@@ -58,12 +63,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_2" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
@@ -73,6 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_3" />
 
@@ -81,17 +89,20 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_3_eg" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_4" />
 
             <TextView
                 android:layout_width="match_parent"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginBottom="20dp"
@@ -101,6 +112,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:textSize="@dimen/font_medium"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_5" />
@@ -110,6 +122,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:layout_marginBottom="20dp"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_5_eg" />
 
@@ -118,12 +131,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
                 android:paddingTop="@dimen/margin_medium"
+                android:textColor="@color/black"
                 android:text="@string/tab4_list_6" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_6_eg" />
@@ -131,6 +146,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_7" />
 
@@ -138,6 +154,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_7_eg" />
@@ -145,6 +162,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/font_medium"
+                android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_8" />
 
@@ -152,6 +170,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_8_eg" />

@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -47,12 +48,14 @@ public class Tab2Fragment extends Fragment {
     Context context;
     ArrayList<String> stuff;
     TableLayout tableLayout;
+    ProgressBar _progressBar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View RootView = inflater.inflate(R.layout.fragment_tab2, null, false);
         tableLayout = RootView.findViewById(R.id.mytable);
+        _progressBar = RootView.findViewById(R.id.progressBar1);
         stuff = new ArrayList<>();
         context = getActivity();
         new doIT().execute();
@@ -65,6 +68,7 @@ public class Tab2Fragment extends Fragment {
         @Override
         protected Void doInBackground(Void... params) {
             try {
+                _progressBar.setVisibility(View.VISIBLE);
                 Document doc = Jsoup.connect("https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/air-advisories").get();
 
                 // With the document fetched, we use JSoup's title() method to fetch the title
@@ -95,6 +99,7 @@ public class Tab2Fragment extends Fragment {
             for(String item: stuff) {
                 System.out.println(item);
             }
+            _progressBar.setVisibility(View.GONE);
             tableLayout.setPadding(20,15, 5,0);
 
             System.out.println("Testing the logic");
@@ -108,6 +113,10 @@ public class Tab2Fragment extends Fragment {
                 for(int j = i; j < i + 4 ; j++) {
                     TextView tv = new TextView(requireContext());
                     tv.setText(stuff.get(j));
+                    if(i > 3) {
+                        tv.setWidth(50);
+                        tv.setHeight(200);
+                    }
                     tv.setBackground(ContextCompat.getDrawable(requireContext(), R.drawable.cell_shape));
                     tv.setPadding(15, 15, 15,15);
                     tv.setTextColor(Color.parseColor("#000000"));

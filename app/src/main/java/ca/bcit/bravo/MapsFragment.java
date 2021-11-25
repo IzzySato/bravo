@@ -37,7 +37,7 @@ public class MapsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        new GetDataJsonObjects().execute();
+//        new GetDataJsonObjects().execute();
         View view = inflater.inflate(R.layout.fragment_maps, null, false);
         MapView mMapView = (MapView) view.findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);
@@ -83,87 +83,87 @@ public class MapsFragment extends Fragment {
 
         return view;
     }
-
-    private class GetDataJsonObjects extends AsyncTask<Void, Void, Void> {
-        @Override
-        protected Void doInBackground(Void... voids) {
-            lock.lock();
-            HttpHandler handler = new HttpHandler();
-            String jsonStr = handler.makeServiceCall(getResources().getString(R.string.serviceURL));
-            if (jsonStr != null) {
-                try {
-                    JSONObject fire = new JSONObject(jsonStr);
-                    JSONArray events = fire.getJSONArray(getResources().getString(R.string.events));
-                    for (int ndx = 0; ndx < events.length(); ndx++) {
-                        JSONObject proObj = events.getJSONObject(ndx);
-                        String proTitle = proObj.getString(getResources().getString(R.string.nasa_title));
-                        if (proTitle.endsWith(getResources().getString(R.string.canada))) {
-                            JSONArray categories = proObj.getJSONArray(getResources().getString(R.string.categories));
-                            JSONArray geometries = proObj.getJSONArray(getResources().getString(R.string.geometries));
-                            JSONObject geoProperty = geometries.getJSONObject(0);
-                            JSONArray coordinates = geoProperty.getJSONArray(getResources().getString(R.string.coordinates));
-                            double latitude = coordinates.getDouble(1);
-                            double longitude = coordinates.getDouble(0);
-                            JSONObject categoryProperty = categories.getJSONObject(0);
-                            String title = categoryProperty.getString(getResources().getString(R.string.nasa_title));
-                            if (title.equals(getResources().getString(R.string.wildfires))) {
-                                String locationName = proTitle.substring(11, proTitle.length()-8);
-                                locations.put(new LatLng(latitude, longitude), locationName);
-                            }
-                        }
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                } finally {
-                    lock.unlock();
-                }
-
-            } else {
-
-            }
-            return null;
-        }
-
-        @Override
-        protected void onPostExecute(Void unused) {
-            super.onPostExecute(unused);
-            Button mapChangeBtn = (Button) getView().findViewById(R.id.btnChangeMapType);
-            mapChangeBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    changeMapType(view);
-                }
-            });
-
-            Button zoomInBtn = (Button) getView().findViewById(R.id.btnZoomIn);
-            zoomInBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    onZoom(view);
-                }
-            });
-
-            Button zoomOutBtn = (Button) getView().findViewById(R.id.btnZoomOut);
-            zoomOutBtn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    onZoom(view);
-                }
-            });
-        }
-
-        public void changeMapType(View v) {
-            if (googleMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL)
-                googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-            else
-                googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        }
-
-        public void onZoom(View v) {
-            if (v.getId() == R.id.btnZoomIn)
-                googleMap.animateCamera(CameraUpdateFactory.zoomIn());
-            else
-                googleMap.animateCamera(CameraUpdateFactory.zoomOut());
-        }
-    }
+//
+//    private class GetDataJsonObjects extends AsyncTask<Void, Void, Void> {
+//        @Override
+//        protected Void doInBackground(Void... voids) {
+//            lock.lock();
+//            HttpHandler handler = new HttpHandler();
+//            String jsonStr = handler.makeServiceCall(getResources().getString(R.string.serviceURL));
+//            if (jsonStr != null) {
+//                try {
+//                    JSONObject fire = new JSONObject(jsonStr);
+//                    JSONArray events = fire.getJSONArray(getResources().getString(R.string.events));
+//                    for (int ndx = 0; ndx < events.length(); ndx++) {
+//                        JSONObject proObj = events.getJSONObject(ndx);
+//                        String proTitle = proObj.getString(getResources().getString(R.string.nasa_title));
+//                        if (proTitle.endsWith(getResources().getString(R.string.canada))) {
+//                            JSONArray categories = proObj.getJSONArray(getResources().getString(R.string.categories));
+//                            JSONArray geometries = proObj.getJSONArray(getResources().getString(R.string.geometries));
+//                            JSONObject geoProperty = geometries.getJSONObject(0);
+//                            JSONArray coordinates = geoProperty.getJSONArray(getResources().getString(R.string.coordinates));
+//                            double latitude = coordinates.getDouble(1);
+//                            double longitude = coordinates.getDouble(0);
+//                            JSONObject categoryProperty = categories.getJSONObject(0);
+//                            String title = categoryProperty.getString(getResources().getString(R.string.nasa_title));
+//                            if (title.equals(getResources().getString(R.string.wildfires))) {
+//                                String locationName = proTitle.substring(11, proTitle.length()-8);
+//                                locations.put(new LatLng(latitude, longitude), locationName);
+//                            }
+//                        }
+//                    }
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                } finally {
+//                    lock.unlock();
+//                }
+//
+//            } else {
+//
+//            }
+//            return null;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(Void unused) {
+//            super.onPostExecute(unused);
+//            Button mapChangeBtn = (Button) getView().findViewById(R.id.btnChangeMapType);
+//            mapChangeBtn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    changeMapType(view);
+//                }
+//            });
+//
+//            Button zoomInBtn = (Button) getView().findViewById(R.id.btnZoomIn);
+//            zoomInBtn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    onZoom(view);
+//                }
+//            });
+//
+//            Button zoomOutBtn = (Button) getView().findViewById(R.id.btnZoomOut);
+//            zoomOutBtn.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View view) {
+//                    onZoom(view);
+//                }
+//            });
+//        }
+//
+//        public void changeMapType(View v) {
+//            if (googleMap.getMapType() == GoogleMap.MAP_TYPE_NORMAL)
+//                googleMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+//            else
+//                googleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+//        }
+//
+//        public void onZoom(View v) {
+//            if (v.getId() == R.id.btnZoomIn)
+//                googleMap.animateCamera(CameraUpdateFactory.zoomIn());
+//            else
+//                googleMap.animateCamera(CameraUpdateFactory.zoomOut());
+//        }
+//    }
 }

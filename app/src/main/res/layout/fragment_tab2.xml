@@ -4,14 +4,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/margin_medium"
     tools:context=".Tab2Fragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="40dp"
+        android:text="@string/tab2_heading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
 
     <TableLayout
+        android:stretchColumns="*"
         android:id="@+id/mytable"
         android:layout_width="371dp"
-        android:layout_height="582dp">
-    </TableLayout>
-
+        android:layout_height="582dp" />
 </LinearLayout>
