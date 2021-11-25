@@ -19,7 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             app:tabRippleColor="@color/red_200"
-
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white"
+            app:tabBackground="@drawable/tab_background"
 
             />
 

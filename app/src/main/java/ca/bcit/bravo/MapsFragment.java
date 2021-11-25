@@ -87,7 +87,7 @@ public class MapsFragment extends Fragment {
     private class GetDataJsonObjects extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
-            lock.lock();
+//            lock.lock();
             HttpHandler handler = new HttpHandler();
             String jsonStr = handler.makeServiceCall(getResources().getString(R.string.serviceURL));
             if (jsonStr != null) {
