@@ -1,11 +1,14 @@
 package ca.bcit.bravo;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import android.util.Log;
@@ -128,5 +131,6 @@ public class Tab2Fragment extends Fragment {
                 tableLayout.addView(row);
             }
         }
+
     }
 }
