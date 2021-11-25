@@ -41,7 +41,8 @@
     <string name="custom">Custom Map</string>
     <string name="current_location">Current Location</string>
 
-    <string name="serviceURL">https://eonet.sci.gsfc.nasa.gov/api/v2.1/events</string>
+    <!-- <string name="serviceURL">https://eonet.sci.gsfc.nasa.gov/api/v2.1/events</string> -->
+    <string name="serviceURL">https://nasadatabackup.paulthomas1.repl.co/data.json</string>
     <!--    Map API JSON headers-->
     <string name="events">events</string>
     <string name="nasa_title">title</string>
@@ -56,4 +57,6 @@
 
     <!-- Air quality -->
     <string name="air_quality_url">"https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/air-advisories"</string>
+    <string name="homePageDescription">Welcome to FireApp. Use this app when you need to find out where there are fires! Created by Izzy Sato, Divanshu Sharma, Jason Rivera</string>
+    <string name="treeFireLogoDescription">treefirelogo</string>
 </resources>

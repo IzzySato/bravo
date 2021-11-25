@@ -37,7 +37,7 @@ public class MapsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-//        new GetDataJsonObjects().execute();
+        new GetDataJsonObjects().execute();
         View view = inflater.inflate(R.layout.fragment_maps, null, false);
         MapView mMapView = (MapView) view.findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);
@@ -87,7 +87,7 @@ public class MapsFragment extends Fragment {
     private class GetDataJsonObjects extends AsyncTask<Void, Void, Void> {
         @Override
         protected Void doInBackground(Void... voids) {
-//            lock.lock();
+            lock.lock();
             HttpHandler handler = new HttpHandler();
             String jsonStr = handler.makeServiceCall(getResources().getString(R.string.serviceURL));
             if (jsonStr != null) {
