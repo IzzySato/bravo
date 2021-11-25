@@ -53,4 +53,7 @@
 
     <string name="error_message">Sorry, something went wrong.</string>
     <string name="tab2_heading">Air quality advisories</string>
+
+    <!-- Air quality -->
+    <string name="air_quality_url">"https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/air-advisories"</string>
 </resources>
