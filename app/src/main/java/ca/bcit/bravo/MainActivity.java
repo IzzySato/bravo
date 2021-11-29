@@ -6,7 +6,6 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
@@ -50,11 +49,11 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return new Tab1Fragment();
+                    return new HomeFragment();
                 case 1:
                     return new MapsFragment();
                 case 2:
-                    return new Tab2Fragment();
+                    return new AirQualityFragment();
                 case 3:
                     return new InfoFragment();
             }

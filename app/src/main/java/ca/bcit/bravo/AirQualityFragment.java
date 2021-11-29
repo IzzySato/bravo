@@ -1,21 +1,15 @@
 package ca.bcit.bravo;
 import android.content.Context;
-import android.content.res.Configuration;
-import android.graphics.Color;
-import android.os.AsyncTask;
-import android.os.Bundle;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import android.util.Log;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TableLayout;
 import android.widget.TableRow;
@@ -25,29 +19,13 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Objects;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TableRow;
-import android.widget.TextView;
-
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-
-import java.io.IOException;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Tab2Fragment} factory method to
+ * Use the {@link AirQualityFragment} factory method to
  * create an instance of this fragment.
  */
-public class Tab2Fragment extends Fragment {
+public class AirQualityFragment extends Fragment {
     Context context;
     ArrayList<String> values;
     TableLayout tableLayout;
@@ -56,7 +34,7 @@ public class Tab2Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View RootView = inflater.inflate(R.layout.fragment_tab2, null, false);
+        View RootView = inflater.inflate(R.layout.fragment_airquality, null, false);
         tableLayout = RootView.findViewById(R.id.mytable);
         _progressBar = RootView.findViewById(R.id.progressBar1);
         values = new ArrayList<>();
@@ -66,7 +44,6 @@ public class Tab2Fragment extends Fragment {
     }
     public class doIT extends AsyncTask<Void,Void,Void> {
         String words;
-        String active;
         @Override
         protected Void doInBackground(Void... params) {
             try {
@@ -92,13 +69,9 @@ public class Tab2Fragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            for(String item: values) {
-                System.out.println(item);
-            }
             _progressBar.setVisibility(View.GONE);
             tableLayout.setPadding(20,15, 5,0);
 
-            System.out.println("Testing the logic");
             for(int i =0; i < values.size(); i = i + 4) {
                 TableRow row = new TableRow(requireContext());
                 TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
