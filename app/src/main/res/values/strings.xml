@@ -42,6 +42,7 @@
     <string name="current_location">Current Location</string>
 
     <!-- <string name="serviceURL">https://eonet.sci.gsfc.nasa.gov/api/v2.1/events</string> -->
+<!--     <string name="serviceURL">https://eonet.gsfc.nasa.gov/api/v2.1/events</string>-->
     <string name="serviceURL">https://nasadatabackup.paulthomas1.repl.co/data.json</string>
     <!--    Map API JSON headers-->
     <string name="events">events</string>

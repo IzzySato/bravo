@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_1_eg" />
@@ -71,7 +71,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_2_eg" />
@@ -87,7 +87,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:textColor="@color/black"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
                 android:text="@string/tab4_list_4_eg" />
@@ -120,7 +120,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/black"
                 android:paddingTop="@dimen/margin_medium"
@@ -137,7 +137,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
@@ -153,7 +153,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
@@ -169,7 +169,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15sp"
+                android:textSize="20sp"
                 android:textColor="@color/black"
                 android:layout_marginBottom="20dp"
                 android:paddingTop="@dimen/margin_medium"
