@@ -16,7 +16,7 @@ An app that displays recent wildfires in Canada. It also displays a chart for an
 
 * Google Maps API
 
-* Web scpaping
+* Web scraping
 
 * Tab Layout
 
