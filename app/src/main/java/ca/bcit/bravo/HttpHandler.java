@@ -43,6 +43,10 @@ public class HttpHandler {
             while ((line = reader.readLine()) != null) {
                 sb.append(line).append('\n');
             }
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (ProtocolException e) {
+            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

@@ -49,7 +49,7 @@ import java.io.IOException;
  */
 public class Tab2Fragment extends Fragment {
     Context context;
-    ArrayList<String> stuff;
+    ArrayList<String> values;
     TableLayout tableLayout;
     ProgressBar _progressBar;
 
@@ -59,10 +59,9 @@ public class Tab2Fragment extends Fragment {
         View RootView = inflater.inflate(R.layout.fragment_tab2, null, false);
         tableLayout = RootView.findViewById(R.id.mytable);
         _progressBar = RootView.findViewById(R.id.progressBar1);
-        stuff = new ArrayList<>();
+        values = new ArrayList<>();
         context = getActivity();
         new doIT().execute();
-        // Inflate the layout for this fragment
         return RootView;
     }
     public class doIT extends AsyncTask<Void,Void,Void> {
@@ -72,23 +71,17 @@ public class Tab2Fragment extends Fragment {
         protected Void doInBackground(Void... params) {
             try {
                 _progressBar.setVisibility(View.VISIBLE);
-                Document doc = Jsoup.connect("https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/air-advisories").get();
-
-                // With the document fetched, we use JSoup's title() method to fetch the title
-                System.out.printf("Title: %s\n", doc.title());
+                Document doc = Jsoup.connect(getResources().getString(R.string.air_quality_url)).get();
 
                 words = doc.text();
 
-
                 Element element = doc.select("tbody").first();
                 for(Element tr: element.select("tr")) {
-
                     for(Element td: tr.select("td")){
-                        Log.d("myTag", "DoInBackground " + td.text() + " ");
                         if(td.text().equals("")) {
-                            stuff.add("None");
+                            values.add("None");
                         } else {
-                            stuff.add(td.text());
+                            values.add(td.text());
                         }
                     }
                 }
@@ -99,23 +92,20 @@ public class Tab2Fragment extends Fragment {
         @Override
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
-            for(String item: stuff) {
+            for(String item: values) {
                 System.out.println(item);
             }
             _progressBar.setVisibility(View.GONE);
             tableLayout.setPadding(20,15, 5,0);
 
             System.out.println("Testing the logic");
-            for(int i =0; i < stuff.size(); i = i + 4) {
-                //DebugCode
-                StringBuilder test = new StringBuilder();
-                //Debug code end
+            for(int i =0; i < values.size(); i = i + 4) {
                 TableRow row = new TableRow(requireContext());
                 TableRow.LayoutParams lp = new TableRow.LayoutParams(TableRow.LayoutParams.WRAP_CONTENT, TableRow.LayoutParams.WRAP_CONTENT);
                 row.setLayoutParams(lp);
                 for(int j = i; j < i + 4 ; j++) {
                     TextView tv = new TextView(requireContext());
-                    tv.setText(stuff.get(j));
+                    tv.setText(values.get(j));
                     if(i > 3) {
                         tv.setWidth(50);
                         tv.setHeight(200);
@@ -124,13 +114,9 @@ public class Tab2Fragment extends Fragment {
                     tv.setPadding(15, 15, 15,15);
                     tv.setTextColor(Color.parseColor("#000000"));
                     row.addView(tv);
-                    //DebugCode
-                    test.append(stuff.get(j)).append(" ");
-                    //Debug code end
                 }
                 tableLayout.addView(row);
             }
         }
-
     }
 }

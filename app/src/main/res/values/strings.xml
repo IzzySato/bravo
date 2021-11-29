@@ -55,4 +55,9 @@
 
     <string name="error_message">Sorry, something went wrong.</string>
     <string name="tab2_heading">Air quality advisories</string>
+
+    <!-- Air quality -->
+    <string name="air_quality_url">"https://www2.gov.bc.ca/gov/content/environment/air-land-water/air/air-quality/air-advisories"</string>
+    <string name="homePageDescription">Welcome to FireApp. Use this app when you need to find out where there are fires! Created by Izzy Sato, Divanshu Sharma, Jason Rivera</string>
+    <string name="treeFireLogoDescription">treefirelogo</string>
 </resources>

@@ -3,6 +3,7 @@
     <dimen name="margin_small">10dp</dimen>
     <dimen name="margin_medium">20dp</dimen>
     <dimen name="margin_large">30dp</dimen>
+    <dimen name="margin_xlarge">40dp</dimen>
     <dimen name="font_small">10sp</dimen>
     <dimen name="font_medium">20sp</dimen>
     <dimen name="font_large">30sp</dimen>
