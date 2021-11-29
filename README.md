@@ -20,5 +20,5 @@ An app that displays recent wildfires in Canada. It also displays a chart for an
 
 * Tab Layout
 
-* Frangment
+* Fragment
 
